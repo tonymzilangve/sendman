@@ -1,0 +1,8 @@
+.env
+sendman/tasks_reserved.py
+sendman/templates/list_reserved.html
+sendman/templates/recipients_reserved.html
+sendman/templates/sender_reserved.html
+emailganer/celery_reserved.py
+emailganer/scheduler_res.py
+emailganer/settings_res.py

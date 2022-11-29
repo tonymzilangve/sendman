@@ -1,0 +1,21 @@
+{% extends 'sendman/base.html' %}
+
+{% load static %}
+
+{% block title %}TO{% endblock %}
+
+{%  block content %}
+    <br>
+    <div id="history">
+        {% for mail in history %}
+            <div class="history_note">
+                <b>{{ mail.created_at }}</b>
+                <h4 color="brown">Template "{{ mail.template }}" - to - "{{ mail.rcpt_list }}" Subscriber List</h4>
+{#                <em>{{ mail.schedule }}</em>#}
+            <br>
+            </div>
+        {%  endfor %}
+    </div>
+{% endblock %}
+</body>
+</html>
